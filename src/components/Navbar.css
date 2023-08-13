@@ -1,0 +1,128 @@
+.topnav {
+  /* background: transparent; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* navbar fix on top */
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  /* background: transparent; */
+}
+/* when user has scrolled down a bit */
+.color{
+  background-color: rgb(0, 0, 0, 0.8);
+}
+.color a {
+  color: var(--main-text);
+}
+.color button {
+  color: var(--main-text);
+}
+
+
+.topnav img {
+  width: 200px;
+  /* height: 60px; */
+  margin-left: 1rem;
+}
+/* Desktop Menu */
+.menu-right {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu a {
+  font-weight: bold;
+  text-decoration: none;
+}
+.menu a:hover, .menu2 a:hover {
+  color: var(--link-hover);
+}
+.menu2 a {
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid var(--background);
+  border-radius: .5rem;
+  padding: .25rem .5rem;
+}
+
+/* ########### MOBILE MENU ##################### */
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-mobil-menu);
+  transition: 0.3s;
+}
+
+.mobile-menu .member {
+  display: inline-flex;
+  flex-direction: column;
+}
+/* no dot show Mobile Menu Hamburger */
+.show-mobile-menu-button {
+  display: none;
+}
+/* close button fixed within Mobile Menu */
+.close-mobile-menu-button {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background: transparent;
+  font-size: 50px;
+  color: var(--main-text);
+  cursor: pointer;
+}
+
+.mobile-menu a {
+  padding: 10px 0px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+  color: var(--link-hover);
+}
+
+/* Media queries for responsiveness - mobile first approach */
+@media screen and (max-width: 790px) {
+  .topnav {
+    justify-content: space-between;
+  }
+  .show-mobile-menu-button {
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    font-size: 36px;
+    /* color: var(--main-text); */
+    color:black;
+    cursor: pointer;
+    margin: 0 1rem;
+  }
+
+  /* no dot show Desktop Menu */
+  .menu {
+    display: none;
+  }
+}
