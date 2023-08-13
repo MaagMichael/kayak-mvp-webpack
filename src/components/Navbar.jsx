@@ -70,9 +70,10 @@ function Navbar() {
   return (
     // ternary operator according navcolor useState
     <div className={navcolor ? "topnav color" : "topnav"}>
-      <Link to="/">
+      <a href="/#home-hero"><img src={logo} alt="Logo" /></a>
+      {/* <Link to="/">
         <img src={logo} alt="Logo" />
-      </Link>
+      </Link> */}
 
       <div className="menu-right">
         {/* Desktop Menu, which only appears on large screens */}
