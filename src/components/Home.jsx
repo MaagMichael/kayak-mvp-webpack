@@ -27,6 +27,7 @@ function Home() {
           </h1>
           <h3>...one paddle at a time!</h3>
           <button className="home-hero-button">Book a trip</button>
+          {/* <a href="/#home-contact">Contact</a> */}
         </div>
 
 
