@@ -13,12 +13,11 @@ function Navbar() {
   // https://www.youtube.com/watch?v=JMsNslI8KoY
   const changenavcolor = () => {
     // console.log(window.scrollY);
-    if (window.scrollY>150) {
-      setNavcolor(true)
+    if (window.scrollY > 50) {
+      setNavcolor(true);
     } else {
-      setNavcolor(false)
+      setNavcolor(false);
     }
-
   };
   window.addEventListener("scroll", changenavcolor);
 
@@ -30,11 +29,26 @@ function Navbar() {
   const MobileMenu = () => {
     return (
       <nav className={"mobile-menu"}>
-        <Link to="/" onClick={toggleMobileMenu}>
-          <img src={logo} alt="Logo" width="100" />
-        </Link>
+        <img src={logo} alt="Logo" width="100" />
 
-        <Link to="/" onClick={toggleMobileMenu}>
+        <a href="/#home-hero" onClick={toggleMobileMenu}>
+          Home
+        </a>
+        <a href="/#home-mission" onClick={toggleMobileMenu}>
+          Our Mission
+        </a>
+        <a href="/#home-tours" onClick={toggleMobileMenu}>
+          Tours
+        </a>
+        <a href="/#home-faq" onClick={toggleMobileMenu}>
+          FAQ
+        </a>
+        <a href="/#home-contact" onClick={toggleMobileMenu}>
+          Contact
+        </a>
+
+        {/* Link to router pages */}
+        {/* <Link to="/" onClick={toggleMobileMenu}>
           Home
         </Link>
         <Link to="/mission" onClick={toggleMobileMenu}>
@@ -48,7 +62,7 @@ function Navbar() {
         </Link>
         <Link to="/contact" onClick={toggleMobileMenu}>
           Contact
-        </Link>
+        </Link> */}
       </nav>
     );
   };
@@ -63,15 +77,16 @@ function Navbar() {
       <div className="menu-right">
         {/* Desktop Menu, which only appears on large screens */}
         <nav className="menu">
-          {/* <div className="active-link"> */}
-          <Link to="/">Home</Link>
-          <Link to="/mission">Our Mission</Link> 
-          {/* <a href="/#mission">mission</a>       */}
-          <Link to="/tours">Tours</Link>
-          <a href="/#benefits">onPage</a>
-          {/* <h1>PaddleXplorer</h1> */}
-          <Link to="/faq">FAQs</Link>
-          {/* <Link to="/contact">Contact</Link> */}
+          <a href="/#home-hero">Home</a>
+          <a href="/#home-mission">Our Mission</a>
+          <a href="/#home-tours">Tours</a>
+          <a href="/#home-faq">FAQ</a>
+
+          {/* Link to router pages */}
+          {/* <Link to="/">Home</Link> */}
+          {/* <Link to="/mission">Our Mission</Link>  */}
+          {/* <Link to="/tours">Tours</Link> */}
+          {/* <Link to="/faq">FAQs</Link> */}
         </nav>
 
         {/* This hamburger button only shows up on small screens. It is used to open the mobile menu */}
@@ -91,7 +106,8 @@ function Navbar() {
           </button>
         )}
         <nav className="menu2">
-          <Link to="/contact">Contact</Link>
+          <a href="/#home-contact">Contact</a>
+          {/* <Link to="/contact">Contact</Link> */}
         </nav>
       </div>
     </div>

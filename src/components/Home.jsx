@@ -1,5 +1,11 @@
 import React from "react";
 
+import Navbar from "./Navbar";
+import Mission from "./Mission";
+import Tours from "./Tours";
+import Faq from "./Faq";
+import Contact from "./Contact";
+
 import "./Home.css";
 
 // read in database
@@ -9,14 +15,10 @@ function Home() {
   return (
     <div>
       <section id="home-hero" className="home-hero">
-        {/* <h1>Home</h1> */}
-
         {/* background image */}
         <div className="home-hero-image"></div>
-        {/* <img src="../images/hero_border.jpg" alt="" width="300"/> */}
-
-        {/* navbar on background image */}
-        <div className="home-navbar">home-navbar</div>
+        
+        <div className="home-navbar"><Navbar/></div>
         
         {/* Text card on background image */}
         <div className="home-hero-text">
@@ -30,21 +32,21 @@ function Home() {
 
       </section>
 
-      <section id="mission" className="home-mission">
-        <h1>Our Mission</h1>
+      <section id="home-mission" >
+        <Mission />
       </section>
 
-      <section id="benefits" className="home-benefit">
-        <h1 className="home-benefit-title">What makes our trips special</h1>
-      </section>
-
-      <section id="tours" className="tours">
+      <section id="home-tours" className="tours">
         <h1>See our previous trips</h1>
 
         <h1>What parents say about our project:</h1>
       </section>
 
-      <section id="contact">
+      <section id="home-faq">
+        <h1>FAQ</h1>
+      </section>
+
+      <section id="home-contact">
         <h1>Contact form</h1>
       </section>
     </div>
