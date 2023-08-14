@@ -8,8 +8,6 @@ import Contact from "./Contact";
 
 import "./Home.css";
 
-// read in database
-import Trips from "../data/data.json";
 
 function Home() {
   return (

@@ -42,8 +42,8 @@ function Support() {
               <summary>{faq.id}. {faq.question}</summary>
               <div className="home-faq-answer">
                 <p>{faq.answer}</p>
-                <img src={faq.URL} alt="" />
-                {/* {{faq.URL} ? <img src={faq.URL} alt="faq picture" /> : "no pic"} */}
+                {/* is there a picture in json file for that id ? */}
+                {faq.URL !== "" ? <img src={faq.URL} alt="faq picture" /> : null}
               </div>
             </details>
           );
