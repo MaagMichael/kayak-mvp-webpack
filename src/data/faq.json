@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "question": "Here is the Question 1 ?",
+    "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed.",
+    "URL": "images/faq picture.png"
+  },
+  {
+    "id": 2,
+    "question": "Here is the Question 2 (no picture)?",
+    "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed.",
+    "URL": ""
+  },
+  {
+    "id": 3,
+    "question": "Here is the Question 3 ?",
+    "answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi saepe vero molestiae et pariatur, qui laboriosam eveniet eligendi sed.",
+    "URL": "images/faq picture.png"
+  }
+]

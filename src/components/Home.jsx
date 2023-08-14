@@ -44,7 +44,7 @@ function Home() {
       </section>
 
       <section id="home-faq">
-        <h1>FAQ</h1>
+        <Faq/>
       </section>
 
       <section id="home-contact">
