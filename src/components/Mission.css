@@ -4,10 +4,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    margin: 1rem 0rem;
   }
   .home-mission-textcard {
-    padding: 1rem;
+    padding: .5rem;
     text-align: justify;
     max-width: 60vw;
   }
@@ -25,7 +25,7 @@
 
 /* benfit section */
 .home-benefit {
-  margin: 1rem;
+  margin: 1rem 0rem;
 }
 
 .home-benefit-title {
@@ -61,8 +61,5 @@
     .home-mission{
       /* display: flex; */
       flex-direction: row;
-    }
-  
-  
-  
+    }  
   }
