@@ -28,8 +28,8 @@
 
 
 .topnav img {
-  width: 10rem;
-  margin-left: 1rem;
+  width: 9rem;
+  /* margin-left: .5rem; */
 }
 /* Desktop Menu */
 .menu-right {
