@@ -84,7 +84,7 @@
     transition: 0.5s;
   }
   
-  .active,
+  .tours-active,
   .tours-dot:hover {
     background-color: var(--link-hover);
   }
