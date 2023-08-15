@@ -27,11 +27,11 @@ function Tours() {
     <div className="home-tours">
       <div className="home-tours-trips">
         <h1>See our previous trips</h1>
-        <img src={trip2} alt="" width="400"/>
+        <img src={trip2} alt=""/>
 
 
 
-        
+
       </div>
 
       <div className="home-tours-comments">
