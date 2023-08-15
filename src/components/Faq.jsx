@@ -43,7 +43,7 @@ function Support() {
               <div className="home-faq-answer">
                 <p>{faq.answer}</p>
                 {/* is there a picture in json file for that id ? */}
-                {faq.URL !== "" ? <img src={faq.URL} alt="faq picture" /> : null}
+                {faq.URL !== "" ? <img src={process.env.PUBLIC_URL + faq.URL} alt="faq picture" /> : null}
               </div>
             </details>
           );
