@@ -35,10 +35,8 @@ function Home() {
         <Mission />
       </section>
 
-      <section id="home-tours" className="tours">
-        <h1>See our previous trips</h1>
-
-        <h1>What parents say about our project:</h1>
+      <section id="home-tours" >
+        <Tours/>
       </section>
 
       <section id="home-faq">

@@ -46,5 +46,5 @@ section {
     border: none;
     border-radius: 1rem;
     background-image: linear-gradient(to right, var(--banner-green) , var(--banner-yellow));
-    color:var(--main-text)
+    color:var(--main-text-dark)
   }

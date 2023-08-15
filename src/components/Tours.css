@@ -1,0 +1,25 @@
+.home-tours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem .5rem;
+  }
+
+  .home-tours-comments {
+    /* border: 1px solid red; */
+    padding: 1rem;
+    /* text-align: justify; */
+    /* max-width: 60vw; */
+  }
+
+  .home-tours-comments-card {
+    margin-top: 1rem;
+    /* border: 1px solid red; */
+    padding: 1rem;
+    text-align: justify;
+    max-width: 30rem;
+    border-radius: .5rem;
+    background-image: linear-gradient(to bottom , var(--banner-green) , var(--banner-yellow));
+    color:var(--main-text-dark)
+  }
