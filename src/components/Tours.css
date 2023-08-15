@@ -23,3 +23,7 @@
     background-image: linear-gradient(to bottom , var(--banner-green) , var(--banner-yellow));
     color:var(--main-text-dark)
   }
+
+  .tours-fade {
+    display: none;
+  }

@@ -40,23 +40,24 @@ function Tours() {
                 // if the photo is the current card, show it
                 className={
                   Comments[currentIndex].id === comment.id
-                    ? "home-tours-comments-card fade"
-                    : "fade"
+                    ? "home-tours-comments-card"
+                    : "tours-fade"
                 }
               >
                 <p>"</p>
+                <p>Comment No. {comment.id}</p>
                 <p>{comment.text}</p>
                 <br />
                 <p>by {comment.author}</p>
                 <p>"</p>
 
                 {/* Previous button */}
-                <button onClick={prev} className="prev">
+                <button onClick={prev} className="tours-prev">
                   &lt;
                 </button>
 
                 {/* Next button */}
-                <button onClick={next} className="next">
+                <button onClick={next} className="tours-next">
                   &gt;
                 </button>
               </div>
@@ -69,7 +70,7 @@ function Tours() {
               key={comment.id}
               // highlight the dot that corresponds to the current photo
               className={
-                Comments[currentIndex].id === comment.id ? "dot active" : "dot"
+                Comments[currentIndex].id === comment.id ? "tours-dot tours-active" : "tours-dot"
               }
               // when the user clicks on a dot, go to the corresponding photo
               onClick={() => setCurrentIndex(Comments.indexOf(comment))}
