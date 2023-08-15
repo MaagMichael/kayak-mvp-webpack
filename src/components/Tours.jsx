@@ -47,9 +47,8 @@ function Tours() {
                 <p>"</p>
                 <p>Comment No. {comment.id}</p>
                 <p>{comment.text}</p>
-                <br />
-                <p>by {comment.author}</p>
                 <p>"</p>
+                <p>by {comment.author}</p>
 
                 {/* Previous button */}
                 <button onClick={prev} className="tours-prev">
