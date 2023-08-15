@@ -1,6 +1,6 @@
 .topnav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   /* navbar fix on top */
   position: fixed;
@@ -29,7 +29,7 @@
 
 .topnav img {
   width: 9rem;
-  /* margin-left: .5rem; */
+  margin-left: .5rem;
 }
 /* Desktop Menu */
 .menu-right {
@@ -110,7 +110,7 @@
 }
 
 /* Media queries for responsiveness - mobile first approach */
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 730px) {
   .topnav {
     justify-content: space-between;
   }
