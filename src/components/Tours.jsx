@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import "./Tours.css";
 
+import trip2 from "../images/trip2.png";
+
 // read in database comments
 import Comments from "../data/comment.json";
 
@@ -25,6 +27,7 @@ function Tours() {
     <div className="home-tours">
       <div className="home-tours-trips">
         <h1>See our previous trips</h1>
+        <img src={trip2} alt="" width="400"/>
       </div>
 
       <div className="home-tours-comments">
