@@ -37,7 +37,7 @@ function Tours() {
           Comments.map((comment) => {
             return (
               <div
-                // if the photo is the current card, show it
+                // if the card is the current card, show it
                 className={
                   Comments[currentIndex].id === comment.id
                     ? "home-tours-comments-card"
@@ -63,16 +63,17 @@ function Tours() {
               </div>
             );
           })}
+
         {/* Render dots indicator */}
         <div className="home-tours-comments-dots">
           {Comments.map((comment) => (
             <span
               key={comment.id}
-              // highlight the dot that corresponds to the current photo
+              // highlight the dot that corresponds to the current card
               className={
                 Comments[currentIndex].id === comment.id ? "tours-dot tours-active" : "tours-dot"
               }
-              // when the user clicks on a dot, go to the corresponding photo
+              // when the user clicks on a dot, go to the corresponding card
               onClick={() => setCurrentIndex(Comments.indexOf(comment))}
             ></span>
           ))}
