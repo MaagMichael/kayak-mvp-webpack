@@ -52,7 +52,7 @@ function Tours() {
                 <img src={quoteL} alt="QuoteL" />
                 <p>Comment No. {comment.id}</p>
                 <p>{comment.text}</p>
-                <img src={quoteR} alt="QuoteR" style={{float:"right"}}/>
+                <img src={quoteR} alt="QuoteR" style={{ float: "right" }} />
                 <p>by {comment.author}</p>
 
                 {/* Previous button */}
@@ -84,6 +84,11 @@ function Tours() {
             ></span>
           ))}
         </div>
+        <h1>New trips are coming!</h1>
+        <p>
+          Ready to embark on an unforgettable adventure? Contact us today to
+          book your child's spot on our next kayaking journey.
+        </p>
       </div>
     </div>
   );

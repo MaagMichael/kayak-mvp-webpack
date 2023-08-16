@@ -39,13 +39,18 @@ function Home() {
         <Tours/>
       </section>
 
+      <section id="home-contact">
+        <h1>Contact form</h1>
+      </section>
+
       <section id="home-faq">
         <Faq/>
       </section>
 
-      <section id="home-contact">
-        <h1>Contact form</h1>
-      </section>
+      <footer id="home-footer">
+        <h1>footer with impressum</h1>
+      </footer>
+
     </div>
   );
 }
