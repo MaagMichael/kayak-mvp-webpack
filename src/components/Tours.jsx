@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import "./Tours.css";
 
 import trip2 from "../images/trip2.png";
+import quoteL from "../images/quoteL.svg";
+import quoteR from "../images/quoteR.svg";
 
 // read in database comments
 import Comments from "../data/comment.json";
@@ -27,11 +29,7 @@ function Tours() {
     <div className="home-tours">
       <div className="home-tours-trips">
         <h1>See our previous trips</h1>
-        <img src={trip2} alt=""/>
-
-
-
-
+        <img src={trip2} alt="" />
       </div>
 
       <div className="home-tours-comments">
@@ -51,10 +49,10 @@ function Tours() {
                     : "tours-fade"
                 }
               >
-                <p>"</p>
+                <img src={quoteL} alt="QuoteL" />
                 <p>Comment No. {comment.id}</p>
                 <p>{comment.text}</p>
-                <p>"</p>
+                <img src={quoteR} alt="QuoteR" style={{float:"right"}}/>
                 <p>by {comment.author}</p>
 
                 {/* Previous button */}
@@ -77,7 +75,9 @@ function Tours() {
               key={comment.id}
               // highlight the dot that corresponds to the current card
               className={
-                Comments[currentIndex].id === comment.id ? "tours-dot tours-active" : "tours-dot"
+                Comments[currentIndex].id === comment.id
+                  ? "tours-dot tours-active"
+                  : "tours-dot"
               }
               // when the user clicks on a dot, go to the corresponding card
               onClick={() => setCurrentIndex(Comments.indexOf(comment))}
