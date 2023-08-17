@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Fun on Colibita Lake",
+    "date": "June 2023",
+    "URL": "images/trip1.png"
+  },
+  {
+    "id": 2,
+    "name": "Kayaking with 2nd Grade",
+    "date": "July 2023",
+    "URL": "images/trip2.png"
+  },
+  {
+    "id": 3,
+    "name": "somewhere on water...",
+    "date": "August 2023",
+    "URL": "images/trip2.png"
+  }
+]

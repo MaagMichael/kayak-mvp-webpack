@@ -2,15 +2,18 @@ import React, { useState } from "react";
 
 import "./Tours.css";
 
-import trip2 from "../images/trip2.png";
 import quoteL from "../images/quoteL.svg";
 import quoteR from "../images/quoteR.svg";
+
+// read in database trips
+import Trips from "../data/tour.json";
 
 // read in database comments
 import Comments from "../data/comment.json";
 
 function Tours() {
   // show the card with this index
+  const [currentIndextrip, setCurrentIndextrip] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // move to the next card
@@ -27,9 +30,56 @@ function Tours() {
 
   return (
     <div className="home-tours">
+      <h1>See our previous trips</h1>
+
       <div className="home-tours-trips">
-        <h1>See our previous trips</h1>
-        <img src={trip2} alt="" />
+        {/* comments data provided by json file*/}
+        {Trips &&
+          Trips.map((trip) => {
+            return (
+              <div
+                // if the card is the current card, show it
+                className={
+                  Trips[currentIndextrip].id === trip.id
+                    ? "home-tours-trips-card"
+                    : "trips-fade"
+                }
+              >
+                <p>Trip No. {trip.id}</p>
+                <img
+                  src={process.env.PUBLIC_URL + trip.URL}
+                  alt="trip picture"
+                />
+                <div
+                  className="home-tours-trips-pic"
+                  style={{
+                    backgroundImage: `url(${
+                      process.env.PUBLIC_URL + trip.URL
+                    })`
+                  }}
+                ></div>
+                <p>{trip.name}</p>
+                <p>{trip.date}</p>
+              </div>
+            );
+          })}
+
+        {/* Render dots indicator */}
+        <div className="home-tours-trips-dots">
+          {Comments.map((comment) => (
+            <span
+              key={comment.id}
+              // highlight the dot that corresponds to the current card
+              className={
+                Comments[currentIndextrip].id === comment.id
+                  ? "trips-dot trips-active"
+                  : "trips-dot"
+              }
+              // when the user clicks on a dot, go to the corresponding card
+              onClick={() => setCurrentIndextrip(Comments.indexOf(comment))}
+            ></span>
+          ))}
+        </div>
       </div>
 
       <div className="home-tours-comments">
