@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import "./Tours.css";
 
+import SliderTours from "./SliderTours";
+
 import quoteL from "../images/quoteL.svg";
 import quoteR from "../images/quoteR.svg";
 
@@ -32,6 +34,8 @@ function Tours() {
     <div className="home-tours">
       <h1>See our previous trips</h1>
 
+      <SliderTours />
+
       <div className="home-tours-trips">
         {/* comments data provided by json file*/}
         {Trips &&
@@ -46,10 +50,10 @@ function Tours() {
                 }
               >
                 <p>Trip No. {trip.id}</p>
-                <img
+                {/* <img
                   src={process.env.PUBLIC_URL + trip.URL}
                   alt="trip picture"
-                />
+                /> */}
                 <div
                   className="home-tours-trips-pic"
                   style={{
