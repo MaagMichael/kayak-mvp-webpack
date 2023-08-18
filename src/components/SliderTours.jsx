@@ -10,10 +10,9 @@ function SliderTours() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
-    // <div >
         <div className="slidertours">
 
-      {/* comments data provided by json file*/}
+      {/* trips data provided by json file*/}
       {Trips &&
           Trips.map((trip) => {
             return (
