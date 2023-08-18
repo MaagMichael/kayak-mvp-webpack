@@ -26,7 +26,7 @@ function Tours() {
       <SliderComments />
 
       <div className="home-tours-new">
-        <h1>New trips are coming!</h1>
+        <h1><span>New</span> trips are coming!</h1>
         <p>
           Ready to embark on an unforgettable adventure? Contact us today to
           book your child's spot on our next kayaking journey.

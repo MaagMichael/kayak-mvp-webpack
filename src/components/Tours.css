@@ -17,3 +17,6 @@
     text-align: justify;
     
 }
+.home-tours-new span {
+  color: var(--banner-green);
+}
