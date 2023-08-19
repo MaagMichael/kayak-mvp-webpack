@@ -27,8 +27,10 @@ function Home() {
             Empowering <strong>Youth</strong>
           </h1>
           <h3>...one paddle at a time!</h3>
+          
+          <a href="/#home-contact">
           <button className="home-hero-button">Book a trip</button>
-          {/* <a href="/#home-contact">Contact</a> */}
+          </a>
         </div>
 
 
