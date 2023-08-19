@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 
 import "./ScrollTop.css";
 
+import IconTop from "../images/CircleUpRounded.svg";
+
 export default function ScrollTop() {
   // The back-to-top button is hidden at the beginning
   const [showUpButton, setShowUpButton] = useState(false);
@@ -42,7 +44,7 @@ export default function ScrollTop() {
         <button onClick={scrollToTop} className="back-to-top">
           {/* up button of react icons*/}
           {/* <BsArrowUpShort /> */}
-          TOP
+          <img src={IconTop} alt="Top" />
         </button>
       )}
     </>
