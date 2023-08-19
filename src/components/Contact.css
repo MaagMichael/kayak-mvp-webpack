@@ -2,7 +2,6 @@
     /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     margin: 1rem 0.5rem;
 }
@@ -11,7 +10,6 @@
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     width: 90vw;
     max-width: 30rem;
