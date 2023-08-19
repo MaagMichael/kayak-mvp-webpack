@@ -1,0 +1,21 @@
+.home-contact{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0.5rem;
+}
+
+.home-contact-form {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home-contact-pic img{
+width: 80vw;
+}

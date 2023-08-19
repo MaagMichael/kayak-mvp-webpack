@@ -47,7 +47,7 @@ function Home() {
       </section>
 
       <section id="home-contact">
-        <h1>Contact form</h1>
+        <Contact />
       </section>
 
       <footer id="home-footer">
