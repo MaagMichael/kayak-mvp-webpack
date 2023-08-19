@@ -2,10 +2,8 @@ import React, { useState } from "react";
 
 import "./SliderTours.css";
 
-// read in database trips
-import Trips from "../data/tour.json";
-
-function SliderTours() {
+// Trips from type object
+function SliderTours({Trips}) {
   // show the card with this index
   const [currentIndex, setCurrentIndex] = useState(0);
 

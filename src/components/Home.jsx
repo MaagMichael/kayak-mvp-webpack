@@ -5,6 +5,7 @@ import Mission from "./Mission";
 import Tours from "./Tours";
 import Faq from "./Faq";
 import Contact from "./Contact";
+import ScrollTop from "./ScrollTop";
 
 import "./Home.css";
 
@@ -12,6 +13,8 @@ import "./Home.css";
 function Home() {
   return (
     <div>
+
+      <ScrollTop />
       <section id="home-hero" className="home-hero">
         {/* background image */}
         <div className="home-hero-image"></div>

@@ -5,10 +5,8 @@ import "./SliderComments.css";
 import quoteL from "../images/quoteL.svg";
 import quoteR from "../images/quoteR.svg";
 
-// read in database comments
-import Comments from "../data/comment.json";
-
-function SliderComments() {
+// Comments from type object
+function SliderComments({Comments}) {
   // show the card with this index
   const [currentIndex, setCurrentIndex] = useState(0);
 
