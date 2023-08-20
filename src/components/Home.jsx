@@ -5,6 +5,7 @@ import Mission from "./Mission";
 import Tours from "./Tours";
 import Faq from "./Faq";
 import Contact from "./Contact";
+import Footer from "./Footer";
 import ScrollTop from "./ScrollTop";
 
 import "./Home.css";
@@ -53,7 +54,7 @@ function Home() {
       </section>
 
       <footer id="home-footer">
-        <h1>footer with impressum</h1>
+        <Footer/>
       </footer>
 
     </div>
