@@ -21,6 +21,7 @@ function Footer() {
         <p>Designed and developed for PADDLEXPLORER</p>
         <p>by ReDI School</p>
         <p>in Munich, Germany.</p>
+        <p>Copyright © 2023. All rights reserved.</p>
       </div>
 
       <div className="home-footer-address">
@@ -35,8 +36,6 @@ function Footer() {
           <img src={phone} alt="phone: " /> +040263361447
         </p>
       </div>
-
-      <p>Copyright © 2023. All rights reserved.</p>
     </div>
   );
 }
