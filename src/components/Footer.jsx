@@ -21,6 +21,7 @@ function Footer() {
         <p>Designed and developed for PADDLEXPLORER</p>
         <p>by ReDI School</p>
         <p>in Munich, Germany.</p>
+        <hr />
         <p>Copyright © 2023. All rights reserved.</p>
       </div>
 
