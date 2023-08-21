@@ -54,14 +54,8 @@
       justify-content: space-evenly;
     }
     .home-footer-sitemap{
-      /* display: flex; */
       flex-direction: column;
       align-items: normal;
-      /* width:30% */
     }  
-    .home-footer-address {
-      /* width:30%; */
-      /* float:right; */
-    }
-    
+       
   }
